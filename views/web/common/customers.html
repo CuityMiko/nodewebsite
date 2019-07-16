@@ -1,0 +1,12 @@
+<!--服务客户-->
+<section class="customers media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+    <div class="service">服务客户</div>
+    <!--动态图文区域-->
+    <div class="img-div-wrap">
+        <% for(var i = 0; i < model.fwkhData.length; i++) { %>
+        <div class="img-div">
+            <img src="<%=model.fwkhData[i].img%>"/>
+        </div>
+        <% } %>
+    </div>
+</section>

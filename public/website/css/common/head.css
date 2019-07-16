@@ -1,0 +1,302 @@
+article, aside, dialog, footer, header, section, footer, nav, figure, menu {
+  display: block; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.clearfix {
+  display: inline-block; }
+  .clearfix:after {
+    display: block;
+    content: '.';
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.content-core {
+  min-width: 1180px;
+  width: 1180px;
+  margin: 0 auto;
+  position: relative; }
+
+.text-overflow-control {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; }
+
+.min-btn {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #EE7306;
+  box-shadow: 0px 5px 16px 0px rgba(239, 152, 58, 0.58);
+  font-size: 14px;
+  font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+  font-weight: inherit;
+  color: white; }
+  .min-btn:hover {
+    text-decoration: none;
+    background-color: #F38D33; }
+
+.mid-btn {
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #EE7306;
+  box-shadow: 0px 5px 16px 0px rgba(239, 152, 58, 0.58);
+  font-size: 16px;
+  font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+  font-weight: inherit;
+  color: white; }
+  .mid-btn:hover {
+    text-decoration: none;
+    background-color: #F38D33; }
+
+.learn-more {
+  width: 90px;
+  height: 38px;
+  border: 1px solid #EE7306;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 38px;
+  color: #EE7306; }
+  .learn-more:hover {
+    border: 1px solid #F38D33;
+    text-decoration: none;
+    color: #F38D33; }
+
+body {
+  min-width: 1180px; }
+
+.banner-title {
+  font-size: 42px;
+  font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+  font-weight: inherit;
+  color: white; }
+
+.banner-subtitle {
+  font-size: 20px;
+  font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+  font-weight: inherit;
+  color: white; }
+
+.banner-btn {
+  box-shadow: none; }
+
+.banner-content .banner {
+  height: 540px;
+  width: 100%;
+  height: 540px;
+  background-image: url("/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 540px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    .banner-content .banner {
+      background-image: url("/images/banner@2x.png"); } }
+  .banner-content .banner .banner-title {
+    padding-top: 140px;
+    margin: 0 0 23px 145px; }
+  .banner-content .banner .banner-subtitle {
+    margin: 0 0 55px 145px; }
+  .banner-content .banner .banner-btn {
+    margin-left: 145px;
+    box-shadow: none; }
+
+.footer-banner {
+  height: 314px;
+  text-align: center;
+  width: 100%;
+  height: 314px;
+  background-image: url("/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 314px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    .footer-banner {
+      background-image: url("/images/banner@2x.png"); } }
+  .footer-banner .banner-title {
+    padding-top: 77px;
+    font-size: 30px; }
+  .footer-banner .banner-subtitle {
+    margin-top: 18px;
+    font-size: 18px; }
+  .footer-banner .banner-btn {
+    margin: 39px auto 0; }
+
+section .section-tit {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+  font-weight: inherit;
+  color: #333; }
+section .section-subtit {
+  margin-top: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+  font-weight: inherit;
+  color: #999; }
+
+.text-img-content {
+  text-align: center;
+  margin-bottom: 180px; }
+  .text-img-content img {
+    display: inline-block;
+    vertical-align: middle; }
+  .text-img-content .image-text {
+    width: 465px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left; }
+    .text-img-content .image-text .image-name {
+      font-size: 30px;
+      font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+      font-weight: inherit;
+      color: #333; }
+    .text-img-content .image-text .image-desc {
+      margin-top: 29px;
+      line-height: 28px;
+      font-size: 18px;
+      font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+      font-weight: 300;
+      color: #333; }
+  .text-img-content:nth-child(2n+1) .image-text {
+    margin-left: 160px; }
+  .text-img-content:nth-child(2n) .image-text {
+    margin-right: 160px; }
+
+.header .header-content {
+  position: relative;
+  width: 100%;
+  min-width: 1180px;
+  z-index: 200;
+  translation: all 0.5s ease-in; }
+  .header .header-content .navbar-content {
+    width: 1180px;
+    margin: 0 auto;
+    height: 72px; }
+    .header .header-content .navbar-content .container-fluid {
+      height: 72px; }
+      .header .header-content .navbar-content .container-fluid .navbar-log {
+        float: left;
+        width: 153px;
+        height: 28px; }
+        .header .header-content .navbar-content .container-fluid .navbar-log .logo {
+          margin-top: 20px;
+          width: 153px;
+          height: 28px;
+          background-image: url("/images/logo.png");
+          background-repeat: no-repeat;
+          background-size: 153px 28px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+            .header .header-content .navbar-content .container-fluid .navbar-log .logo {
+              background-image: url("/images/logo@2x.png"); } }
+      .header .header-content .navbar-content .container-fluid .nav-items {
+        list-style: none;
+        padding-left: 325px; }
+        .header .header-content .navbar-content .container-fluid .nav-items li {
+          float: left; }
+          .header .header-content .navbar-content .container-fluid .nav-items li a {
+            position: relative;
+            display: block;
+            padding: 25px 29px;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            font-size: 14px;
+            font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+            font-weight: inherit;
+            color: #333; }
+            .header .header-content .navbar-content .container-fluid .nav-items li a:hover {
+              color: #EE7306;
+              border-bottom: 2px solid #EE7306; }
+          .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap {
+            position: absolute;
+            left: 0;
+            z-index: 200;
+            width: 100%;
+            height: 0px;
+            overflow: hidden;
+            max-height: 1000px;
+            background-color: white;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+            .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content {
+              height: 440px; }
+              .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .nav-content-tit {
+                margin: 48px 0 35px;
+                font-size: 12px;
+                font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+                font-weight: inherit;
+                color: #666; }
+              .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .nav-content {
+                position: relative; }
+              .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .nav-block {
+                width: 166px;
+                height: 60px;
+                margin-right: 15px;
+                margin-bottom: 22px; }
+                .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .nav-block a {
+                  width: 100%;
+                  height: 100%;
+                  padding: 0; }
+                  .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .nav-block a:hover {
+                    border-bottom: none; }
+                  .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .nav-block a .icon {
+                    display: inline-block;
+                    vertical-align: middle; }
+                  .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .nav-block a .nav-text {
+                    display: inline-block;
+                    margin-top: 5px;
+                    vertical-align: middle; }
+                    .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .nav-block a .nav-text .nav-name {
+                      font-size: 16px;
+                      font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+                      font-weight: inherit;
+                      color: #333; }
+                    .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .nav-block a .nav-text .nav-detail {
+                      margin-top: 9px;
+                      font-size: 12px;
+                      font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+                      font-weight: inherit;
+                      color: #666; }
+                .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .nav-block:hover {
+                  background-color: #F5F5F5; }
+              .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .products {
+                position: relative;
+                width: 550px;
+                display: inline-block;
+                vertical-align: top; }
+                .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .products .nav-content {
+                  border-right: 1px solid #EEEDED; }
+                .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .products .nav-block {
+                  float: left; }
+              .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .service-industry {
+                position: relative;
+                width: 550px;
+                display: inline-block;
+                vertical-align: top;
+                padding-left: 50px; }
+                .header .header-content .navbar-content .container-fluid .nav-items li .dropdown-menu-wrap .dropdown-content .service-industry .nav-block {
+                  float: left; }
+        .header .header-content .navbar-content .container-fluid .nav-items .active:hover .dropdown-menu-wrap {
+          height: 450px; }
+        .header .header-content .navbar-content .container-fluid .nav-items .right-item {
+          float: right;
+          margin-top: 18px; }
+          .header .header-content .navbar-content .container-fluid .nav-items .right-item .min-btn {
+            padding: 0;
+            border-bottom: none;
+            font-size: 14px;
+            font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+            font-weight: inherit;
+            color: white; }
+
+/*# sourceMappingURL=head.css.map */

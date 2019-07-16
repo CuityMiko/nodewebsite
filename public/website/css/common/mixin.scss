@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+//设置字体
+@mixin fontstyle($font-size,$font-weight, $font-color) {
+  font-size: $font-size;
+  font-family: 'SourceHanSansCN','pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+  font-weight: $font-weight;
+  color: $font-color;
+}
+
+//根据设备使用不同图片
+@mixin bg-image($url, $width, $height) {
+  width: $width;
+  height: $height;
+  background-image: url($url + ".png");
+  background-repeat: no-repeat;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    background-image: url($url + "@2x.png");
+  }
+  background-size: $width $height;
+}

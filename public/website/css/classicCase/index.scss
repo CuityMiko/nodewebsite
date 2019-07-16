@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+//免押金租赁css
+@import "../common/head";
+@import "../common/footer";
+@import "../common/customers";
+
+//引入banner图
+.banner-content {
+  .banner {
+    @include bg-image("/website/images/classicCase/banner", 100%, 540px);
+  }
+}
+
+//合作对象
+.logo {
+  margin: 80px auto;
+  @include bg-image("/website/images/classicCase/logo", 1180px, 128px);
+}
+
+//轮播
+.mask-content {
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 578px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.swiper-slide-active {
+  .mask-content {
+    .mask {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}

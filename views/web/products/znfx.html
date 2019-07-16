@@ -1,0 +1,100 @@
+<!--引入当前css-->
+<link href="/website/css/products/znfx.css" rel="stylesheet">
+
+<div>
+
+    <!--头部banner-->
+    <div class="banner-content">
+        <div class="item">
+            <div class="banner">
+                <div class="content-core">
+                    <div class="text">
+                        <div class="banner-title">智能分销</div>
+                        <div class="banner-subtitle">帮助景区、旅行社建立分销网络 万人帮你卖票</div>
+                        <a href="/agent"><div class="banner-btn mid-btn">了解更多</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--分销铁军-->
+    <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <!--title-->
+        <div class="distribution">
+            <div class="distribution-title">分销铁军 解决票务销售难题</div>
+            <div class="distribution-subtitle">云分销+门票收入实时分账+人人分销体系</div>
+        </div>
+        <!--图片-->
+        <div class="distribution-banner"></div>
+    </div>
+
+    <!--动态图文区域-->
+    <section class="text-img-wrap media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <% for(var i = 0; i < model.znfxData.length; i++) { %>
+
+        <% if (i % 2 == 0) { %>
+        <div class="text-img-content">
+            <img src="<%=model.znfxData[i].img%>"/>
+            <div class="image-text">
+                <div class="image-name"><%=model.znfxData[i].imageName%></div>
+                <div class="image-desc">
+                    <%=model.znfxData[i].imageDesc%>
+                </div>
+            </div>
+        </div>
+        <% } else { %>
+        <div class="text-img-content">
+            <div class="image-text">
+                <div class="image-name"><%=model.znfxData[i].imageName%></div>
+                <div class="image-desc">
+                    <%=model.znfxData[i].imageDesc%>
+                </div>
+            </div>
+            <img src="<%=model.znfxData[i].img%>"/>
+        </div>
+        <% } } %>
+    </section>
+
+    <!--六大功能-->
+    <div class="functions media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <div class="text">六大功能 打造万人销售团队</div>
+        <!--1-3功能-->
+        <div class="function-1"></div>
+        <!--4-6功能-->
+        <div class="function-2"></div>
+    </div>
+
+    <!--代言人-->
+    <div class="spokesman media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <div class="text">代言人角色</div>
+        <div class="spokesman-icon"></div>
+    </div>
+
+    <!--核心优势-->
+    <div class="advantage media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <div class="text">快盈分销的核心优势</div>
+        <div class="mid-btn btn-shadow">点击了解</div>
+        <div class="advantage-icon"></div>
+    </div>
+
+    <!--技术支持组建-->
+    <div class="technical media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <div class="text">
+            <div class="title">技术支持组建</div>
+            <div class="subtitle">景区/酒店/乐园/停车场等提供多种解决方案</div>
+            <div class="technical-icon"></div>
+        </div>
+    </div>
+
+    <!--服务客户-->
+    <%include ../common/customers.html%>
+
+    <!--底部banner-->
+    <div class="footer-banner media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <div class="banner-title">智能分销</div>
+        <div class="banner-subtitle">帮助景区、旅行社建立分销网络 万人帮你卖票</div>
+        <a href="/agent"><div class="banner-btn mid-btn">了解更多</div></a>
+    </div>
+
+</div>

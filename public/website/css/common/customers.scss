@@ -1,0 +1,27 @@
+// 服务客户
+
+.customers{
+  .service {
+    text-align: center;
+    @include fontstyle(30px, inherit, #333333);
+    margin: 126px 0 79px;
+  }
+  .img-div-wrap {
+    width: 1068px;
+    height: 144px;
+    margin: 0 auto 169px;
+    .img-div {
+      width: 140px;
+      height: 40px;
+      float: left;
+      margin-right: 92px;
+      margin-bottom: 64px;
+      img {
+        display: inline-block;
+      }
+      &:nth-child(5n) {
+        margin-right: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,503 @@
+@charset "utf-8";
+
+//首页css
+@import "../common/head";
+@import "../common/footer";
+
+body {
+  position: relative;
+}
+
+//头部轮播板块
+.banner-content {
+  // banner滑动按钮
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    .owl-dot span {
+      width: 37px;
+      height: 4px;
+    }
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    background: #D0CECE;
+  }
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: white;
+  }
+}
+
+//产品介绍
+.product-introduction {
+  padding: 130px 0 75px;
+  .section-main {
+    .mid-btn {
+      margin: 39px auto 72px;
+    }
+    .product-blocks {
+      text-align: center;
+      .product-block {
+        display: inline-block;
+        width: 300px;
+        height: 500px;
+        text-align: center;
+        vertical-align: top;
+        //产品介绍动效
+        transition: all .4s cubic-bezier(.4, 0, .2, 1);
+        .p-img {
+          margin: 43px auto 0;
+        }
+        .p-name {
+          margin-top: 32px;
+          @include fontstyle(20px, inherit, #333);
+        }
+        .p-advantage {
+          margin: 14px auto 32px;
+          @include fontstyle(14px, inherit, #666);
+        }
+        .learn-more {
+          margin: 0 auto;
+        }
+        &:hover {
+          box-shadow: 0px 0px 13px 0px rgba(28, 28, 28, 0.11);
+        }
+        .zhxcx-img {
+          @include bg-image("/website/images/home/zhxcx_img", 260px, 240px);
+        }
+        .znfx-img {
+          @include bg-image("/website/images/home/znfx_img", 260px, 240px);
+        }
+        .jhzf-img {
+          @include bg-image("/website/images/home/jhzf_img", 260px, 240px);
+        }
+
+      }
+      .cent-pb {
+        margin: 0 120px;
+      }
+    }
+  }
+}
+
+//行业解决方案
+.industry-solution {
+  .section-main {
+    width: 1180px;
+    margin: 80px auto 0;
+    .tags {
+      width: 1180px;
+      //border-bottom: 1px solid #EEEDED;
+      text-align: center;
+      .tag {
+        margin-left: 90px;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        color: #666;
+        .divider {
+          width: 30px;
+          height: 4px;
+          margin: 10px auto 0;
+          background-color: white;
+          transition: all .4s cubic-bezier(.4, 0, .2, 1);
+        }
+        .indicator {
+          width: 15px;
+          height: 18px;
+          margin: 10px auto 0;
+          border-left: 1px solid #EEEDED;
+          border-top: 1px solid #EEEDED;
+          transform: rotate(45deg);
+          background-color: white;
+          opacity: 0;
+          transition: all .4s cubic-bezier(.4, 0, .2, 1);
+        }
+        &:first-child {
+          margin-left: 0px;
+        }
+        &:hover {
+          color: #EE7306;
+          .divider {
+            background-color: #EE7306;
+            //opacity: 1;
+          }
+          .indicator {
+            opacity: 1;
+          }
+        }
+      }
+      .tag-hover {
+        .divider {
+          background-color: #EE7306;
+        }
+        .indicator {
+          opacity: 1;
+        }
+      }
+    }
+    .solutions {
+      width: 1180px;
+      margin-top: -9px;
+      border-top: 1px solid #EEEDED;
+      .solution {
+        display: none;
+        padding-top: 48px;
+        text-align: center;
+        .left-img {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .right-text {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 65px;
+          text-align: left;
+          .solution-name {
+            @include fontstyle(26px, inherit, #333);
+          }
+          .solutions-desc {
+            margin: 26px 0 66px;
+            @include fontstyle(16px, inherit, #666);
+          }
+        }
+        .fjms {
+          @include bg-image("/website/images/home/fjms_img", 595px, 339px);
+        }
+        .fjms-icon {
+          @include bg-image("/website/images/home/fjms_icon", 460px, 92px);
+        }
+        .ztly {
+          @include bg-image("/website/images/home/ztly_img", 595px, 339px);
+        }
+        .ztly-icon {
+          @include bg-image("/website/images/home/ztly_icon", 460px, 92px);
+        }
+        .bwg {
+          @include bg-image("/website/images/home/bwg_img", 595px, 339px);
+        }
+        .bwg-icon {
+          @include bg-image("/website/images/home/bwg_icon", 460px, 92px);
+        }
+        .qzyly {
+          @include bg-image("/website/images/home/qzyly_img", 595px, 339px);
+        }
+        .qzyly-icon {
+          @include bg-image("/website/images/home/qzyly_icon", 460px, 92px);
+        }
+        .tcc {
+          @include bg-image("/website/images/home/tcc_img", 595px, 339px);
+        }
+        .tcc-icon {
+          @include bg-image("/website/images/home/tcc_icon", 460px, 92px);
+        }
+        .minsu {
+          @include bg-image("/website/images/home/minsu_img", 595px, 339px);
+        }
+        .minsu-icon {
+          @include bg-image("/website/images/home/minsu_icon", 460px, 92px);
+        }
+        .jiudian {
+          @include bg-image("/website/images/home/jiudian_img", 595px, 339px);
+        }
+        .jiudian-icon {
+          @include bg-image("/website/images/home/jiudian_icon", 460px, 92px);
+        }
+      }
+      .sol-show {
+        display: block;
+      }
+    }
+  }
+
+}
+
+//营销模式
+.marketing-mode {
+  margin-top: 180px;
+  .marketing-mode-img {
+    margin: 68px auto;
+    @include bg-image("/website/images/home/marketing_mode_img", 1221px, 493px);
+  }
+}
+
+//谁在用
+.who-use {
+  margin-top: 151px;
+  .section-main {
+    margin-top: 118px;
+    .user-line {
+      margin-bottom: 40px;
+      text-align: center;
+      .user-block {
+        display: inline-block;
+        margin-left: 40px;
+        vertical-align: top;
+        &:first-child {
+          margin-left: 0px;
+        }
+      }
+    }
+    .user-block {
+      width: 366px;
+      height: 230px;
+      background-color: white;
+      box-shadow: -1px 9px 29px 0px rgba(28, 28, 28, 0.06);
+      .mask {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        .user-img {
+          height: 138px;
+          transition: all .4s cubic-bezier(.4, 0, .2, 1);
+        }
+        .user-logo {
+          margin: 30px auto;
+        }
+        .use-desc {
+          transition: all .4s cubic-bezier(.4, 0, .2, 1);
+          width: 306px;
+          margin: 0 auto;
+          opacity: 0;
+          line-height: 22px;
+          text-align: left;
+          @include fontstyle(12px, inherit, #666);
+        }
+        &:hover {
+          .user-img {
+            height: 0px;
+          }
+          .use-desc {
+            opacity: 1;
+          }
+        }
+      }
+      .songchengyy {
+        @include bg-image("/website/images/home/songchengyy", 366px, 138px);
+      }
+      .songchengyy-logo {
+        @include bg-image("/website/images/home/songchengyy_logo", 126px, 36px);
+      }
+      .haichanghygy {
+        @include bg-image("/website/images/home/haichanghygy", 366px, 138px);
+      }
+      .haichanghygy-logo {
+        @include bg-image("/website/images/home/haichanghygy_logo", 126px, 36px);
+      }
+      .huanleg {
+        @include bg-image("/website/images/home/huanleg", 366px, 138px);
+      }
+      .huanleg-logo {
+        @include bg-image("/website/images/home/huanleg_logo", 126px, 36px);
+      }
+      .huanghelou {
+        @include bg-image("/website/images/home/huanghelou", 366px, 138px);
+      }
+      .huanghelou-logo {
+        @include bg-image("/website/images/home/huanghelou_logo", 126px, 36px);
+      }
+      .taishang {
+        @include bg-image("/website/images/home/taishang_img", 366px, 138px);
+      }
+      .taishang-logo {
+        @include bg-image("/website/images/home/taishang_logo", 126px, 36px);
+      }
+      .xihu {
+        @include bg-image("/website/images/home/xihu_img", 366px, 138px);
+      }
+      .xihu-logo {
+        @include bg-image("/website/images/home/xihu_logo", 126px, 36px);
+      }
+      .zjbwg {
+        @include bg-image("/website/images/home/zjbwg_img", 366px, 138px);
+      }
+      .zjbwg-logo {
+        @include bg-image("/website/images/home/zjbwg_logo", 126px, 36px);
+      }
+      .mumawg {
+        @include bg-image("/website/images/home/mumawg_img", 366px, 138px);
+      }
+      .mumawg-logo {
+        @include bg-image("/website/images/home/mumawg_logo", 126px, 36px);
+      }
+      .xuanwuhu {
+        @include bg-image("/website/images/home/xuanwuhu_img", 366px, 138px);
+      }
+      .xuanwuhu-logo {
+        @include bg-image("/website/images/home/xuanwuhu_logo", 126px, 36px);
+      }
+
+      //.huanghelou {
+      //  @include bg-image("/website/images/home/huanghelou", 366px, 138px);
+      //}
+      //.huanghelou-logo {
+      //  @include bg-image("/website/images/home/huanghelou_logo", 126px, 36px);
+      //}
+    }
+  }
+  .server-number {
+    margin-top: 140px;
+    .server-content {
+      text-align: center;
+      padding-top: 125px;
+    }
+    @include bg-image("/website/images/home/server_number", 100%, 314px);
+    .server-text, .num {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .server-text {
+      @include fontstyle(30px, inherit, white);
+    }
+    .num {
+      margin: 0 30px;
+      @include fontstyle(57px, inherit, white);
+    }
+  }
+}
+
+//提供的服务
+.server-delivery {
+  margin-top: 175px;
+  .server-img {
+    margin: 97px auto 0;
+    @include bg-image("/website/images/home/server_img", 1180px, 152px);
+
+  }
+}
+
+//合作伙伴
+.partner {
+  margin-top: 190px;
+  .partner-img {
+    margin: 66px auto 180px;
+    @include bg-image("/website/images/home/partner_img", 1180px, 190px);
+  }
+}
+
+//浮动联系我们微信
+.contact-wrap{
+  position: fixed;
+  right: 20px;
+  top: 36%;
+  z-index: 100;
+  .tel-btn {
+    @include bg-image("/website/images/home/tel", 26px, 26px);
+    &:hover {
+      @include bg-image("/website/images/home/tel_checked", 26px, 26px)
+    }
+  }
+  .wechat-btn{
+    @include bg-image("/website/images/home/wx_btn", 26px, 26px);
+    &:hover {
+      @include bg-image("/website/images/home/wx_btn_checked", 26px, 26px)
+    }
+  }
+}
+
+// 表单模块
+.index-form {
+  width: 276px;
+  height: 423px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: -1px 9px 29px 0px rgba(28, 28, 28, 0.06);
+  z-index: 100;
+  .wrap {
+    .contact-us {
+      padding: 38px 0 0 30px;
+      .form-name{
+        @include fontstyle(12px, inherit, #333);
+      }
+      .number{
+        margin-top: 8px;
+        margin-bottom: 19px;
+        @include fontstyle(22px, inherit, #333);
+      }
+    }
+    .layui-elem-field{
+      padding: 14px 30px 0;
+      border: none;
+      .form-desc{
+        margin-bottom: 20px;
+        @include fontstyle(12px, inherit, #333);
+      }
+      .layui-form{
+        .layui-col-md12{
+          margin-bottom: 10px;
+        }
+        .submit-btn{
+          width: 100%;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 4px;
+          cursor: pointer;
+          background-color: #EE7306;
+          box-shadow: 0px 5px 16px 0px rgba(239, 152, 58, 0.58);
+          @include fontstyle(14px, inherit, white);
+          &:hover {
+            text-decoration: none;
+            background-color: #F38D33;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+// 按钮位置
+.btn-content{
+  position: relative;
+  .tel-content{
+    .form-content{
+      display: none;
+      width: 296px;
+      position: absolute;
+      right: 26px;
+    }
+    &:hover{
+      .form-content{
+        display: block;
+      }
+    }
+  }
+  .wx-content{
+    width: 26px;
+    height: 0px;
+    .img-content{
+      position: absolute;
+      top: 104px;
+      right: 46px;
+      width: 200px;
+      height: 200px;
+      display: none;
+      background: white;
+      border-radius:4px;
+      box-shadow:-1px 9px 29px 0px rgba(28,28,28,0.06);
+      img{
+        margin: 30px;
+      }
+    }
+    &:hover{
+      .img-content{
+        display: block;
+      }
+    }
+
+  }
+  .tel-btn{
+    position: absolute;
+    top: 110px;
+    right: 0;
+    cursor: pointer;
+  }
+  .wechat-btn{
+    position: absolute;
+    right: 0;
+    top: 160px;
+    cursor: pointer;
+  }
+}

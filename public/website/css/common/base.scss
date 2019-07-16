@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+// 初始化样式
+article, aside, dialog, footer, header, section, footer, nav, figure, menu {
+  display: block
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+//清浮动
+.clearfix {
+  display: inline-block;
+  &:after {
+    display: block;
+    content: '.';
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+//内容块设置1180px
+.content-core {
+  min-width: 1180px;
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+// 文字溢出隐藏样式
+.text-overflow-control{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  width:100%;
+}
+
+// 小按钮，登录
+.min-btn {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #EE7306;
+  box-shadow: 0px 5px 16px 0px rgba(239, 152, 58, 0.58);
+  @include fontstyle(14px, inherit, white);
+  &:hover {
+    text-decoration: none;
+    background-color: #F38D33;
+  }
+}
+
+// 中等按钮，联系我们
+.mid-btn {
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #EE7306;
+  box-shadow: 0px 5px 16px 0px rgba(239, 152, 58, 0.58);
+  @include fontstyle(16px, inherit, white);
+  &:hover {
+    text-decoration: none;
+    background-color: #F38D33;
+  }
+}
+
+//联系我们按钮
+.learn-more{
+  width: 90px;
+  height: 38px;
+  border: 1px solid #EE7306;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 38px;
+  color: #EE7306;
+  &:hover {
+    border: 1px solid #F38D33;
+    text-decoration: none;
+    color: #F38D33;
+  }
+}
+
+// 设置最小宽度为1180
+body {
+  min-width: 1180px;
+}
+
+// banner相关样式
+.banner-title {
+  @include fontstyle(42px, inherit, white);
+}
+
+.banner-subtitle {
+  @include fontstyle(20px, inherit, white);
+}
+
+.banner-btn {
+  box-shadow: none;
+}
+
+
+//头部banner板块
+.banner-content {
+  .banner {
+    height: 540px;
+    @include bg-image("/images/banner", 100%, 540px);
+    //background: url("/images/banner.png") center center no-repeat;
+    //background-color: #08070a;
+    .banner-title {
+      padding-top: 140px;
+      margin: 0 0 23px 145px;
+    }
+    .banner-subtitle {
+      margin: 0 0 55px 145px;
+    }
+    .banner-btn {
+      margin-left: 145px;
+      box-shadow: none;
+    }
+  }
+}
+
+//底部banner板块
+.footer-banner{
+  height: 314px;
+  text-align: center;
+  @include bg-image("/images/banner", 100%, 314px);
+  .banner-title{
+    padding-top: 77px;
+    font-size: 30px;
+  }
+  .banner-subtitle{
+    margin-top: 18px;
+    font-size: 18px;
+  }
+  .banner-btn{
+    margin: 39px auto 0;
+  }
+}
+
+
+//大块样式
+section {
+  .section-tit {
+    text-align: center;
+    @include fontstyle(30px, inherit, #333);
+  }
+  .section-subtit {
+    margin-top: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    @include fontstyle(18px, inherit, #999);
+  }
+}
+
+.text-img-content {
+  text-align: center;
+  margin-bottom: 180px;
+  img{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .image-text {
+    width: 465px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    .image-name {
+      @include fontstyle(30px, inherit, #333);
+    }
+    .image-desc {
+      margin-top: 29px;
+      line-height: 28px;
+      @include fontstyle(18px, 300, #333);
+    }
+  }
+  &:nth-child(2n+1) {
+    .image-text {
+      margin-left: 160px;
+    }
+  }
+  &:nth-child(2n) {
+    .image-text {
+      margin-right: 160px;
+    }
+  }
+}
+
+
+//表单提交后反馈样式
+.popup {
+  .layui-layer-title {
+    display: none;
+  }
+  .layui-layer-content{
+    height: 320px;
+  }
+  .layui-layer-close{
+    position: static;
+  }
+  .sc-icon {
+    margin: 45px auto 0;
+    @include bg-image("/website/images/apply/agent/sc_icon", 76px, 76px);
+  }
+  .sc-text {
+    margin-top: 14px;
+    text-align: center;
+    @include fontstyle(16px, inherit, #333);
+  }
+  .sc-desc {
+    margin-top: 20px;
+    text-align: center;
+    @include fontstyle(14px, inherit, #999);
+  }
+  .confirm {
+    width: 90px;
+    height: 38px;
+    margin: 35px auto 0;
+    text-align: center;
+    line-height: 38px;
+    border: 1px solid #EE7306;
+    border-radius: 3px;
+    cursor: pointer;
+    @include fontstyle(16px, inherit, #EE7306);
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

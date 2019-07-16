@@ -1,0 +1,49 @@
+{
+  "compFigure":[
+    {
+      "icon":"website/images/about/figure.png",
+      "figureName":"何丞刚",
+      "figureTitle":"创始人 CEO",
+      "figureIntro1":"毕业于浙江大学,",
+      "figureIntro2":"曾就职于阿里巴巴",
+      "figureIntro3":"",
+      "figureIntro4":""
+    },
+    {
+      "icon":"website/images/about/figure.png",
+      "figureName":"方小明",
+      "figureTitle":"CTO",
+      "figureIntro1":"毕业于西安电子科技大学硕士,",
+      "figureIntro2":"曾就职于海信、华为、诺基亚等公司",
+      "figureIntro3":"高级工程师，云计算、虚拟化领域技术专",
+      "figureIntro4":"家"
+    },
+    {
+      "icon":"website/images/about/figure.png",
+      "figureName":"袁承君",
+      "figureTitle":"技术总监",
+      "figureIntro1":"曾就职摩托罗拉，资深软件工程师，云技术",
+      "figureIntro2":"专家，Scrum敏捷专家。",
+      "figureIntro3":"",
+      "figureIntro4":""
+    },
+    {
+      "icon":"website/images/about/figure.png",
+      "figureName":"李德昌 ",
+      "figureTitle":"产品运营总监",
+      "figureIntro1":"毕业于天津工业大学、浙江大学总裁班",
+      "figureIntro2":"原西门子工业设计中心资深设计师，德国",
+      "figureIntro3":"designaffairs设计机构产品与品牌管理专",
+      "figureIntro4":"家"
+    },
+    {
+      "icon":"website/images/about/figure.png",
+      "figureName":"肖春萍",
+      "figureTitle":"资深市场总监",
+      "figureIntro1":"毕业于中国传媒大学（原北京广播学院）",
+      "figureIntro2":"曾先后就职于阿里巴巴、华数传媒、浙江",
+      "figureIntro3":"经视",
+      "figureIntro4":""
+    }
+  ]
+}

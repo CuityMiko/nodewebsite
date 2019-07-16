@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+//免押金租赁css
+@import "../common/head";
+@import "../common/footer";
+@import "../common/customers";
+
+//引入banner图
+.banner-content {
+  .banner {
+    @include bg-image("/website/images/products/myjzl/banner", 100%, 540px);
+  }
+}
+
+//图标
+.function-icons {
+  margin: 125px auto 0;
+  @include bg-image("/website/images/products/myjzl/function_icons", 1180px, 229px);
+}
+
+//景区
+.scenic {
+  margin-top: 193px;
+  //景区物料
+  .scenic-material-img{
+    margin: 90px auto 0;
+    @include bg-image("/website/images/products/myjzl/scenic-material_img", 691px, 417px);
+  }
+  .procedure_img{
+    margin: 206px auto 0;
+    @include bg-image("/website/images/products/myjzl/procedure_img", 1180px, 1233px);
+  }
+}
+
+//借出流程
+.lending-process{
+  margin-top: 205px;
+  .lending-process-img{
+    margin: 78px auto 0;
+    @include bg-image("/website/images/products/myjzl/lending-process_img", 1221px, 610px);
+  }
+}
+
+//归还流程
+.return-process{
+  margin-top: 180px;
+  .return-process-img{
+    margin: 78px auto 0;
+    @include bg-image("/website/images/products/myjzl/return-process_img", 1221px, 610px);
+  }
+}
+
+//技术支持
+.technical-support{
+  margin-top: 181px;
+  .technical-support-img{
+    margin: 70px auto 0;
+    @include bg-image("/website/images/products/myjzl/technical-support_img", 1233px, 467px);
+  }
+}
+
+//尾部引入banner图
+.footer-banner {
+  @include bg-image("/website/images/products/zhxcx/footer_banner", 100%, 314px);
+}
+
+//按钮颜色
+.mid-btn{
+  background-color: #64CDD2;
+  &:hover{
+    background-color: #9BE3E6;
+  }
+}

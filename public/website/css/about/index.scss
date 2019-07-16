@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+//关于我们css
+@import "../common/head";
+@import "../common/footer";
+
+.about {
+  .banner-content {
+    .banner {
+      @include bg-image("/website/images/about/banner", 100%, 540px);
+      .banner-title {
+        padding-top: 200px;
+      }
+    }
+  }
+  .comp-intro {
+    width: 1180px;
+    height: 361px;
+    margin: 0 auto;
+    margin-top: 164px;
+    @include bg-image("/website/images/about/comp-intro", 1180px, 361px);
+  }
+
+  .comp-wish-container {
+    width: 1180px;
+    height: 477px;
+    margin: 0 auto;
+    margin-top: 174px;
+    .comp-wish-title {
+      @include fontstyle(30px, 'SourceHanSansCN-Normal', #333);
+      margin: 0 auto;
+      text-align: center;
+    }
+    .comp-wish-content {
+      width: 1180px;
+      height: 326px;
+      margin: 0 auto;
+      margin-top: 117px;
+      @include bg-image("/website/images/about/comp-wish", 1180px, 326px);
+    }
+  }
+
+  .comp-figure-container {
+    width: 1180px;
+    //height:477px;
+    margin: 0 auto;
+    margin-top: 205px;
+    .comp-figure-title {
+      @include fontstyle(30px, 'SourceHanSansCN-Normal', #333);
+      margin: 0 auto;
+      text-align: center;
+    }
+    .comp-figure-content {
+      width: 1180px;
+      margin: 0 auto;
+      margin-top: 81px;
+      //@include bg-image("/website/images/about/comp-wish", 1180px, 326px);
+      .figure-dingle-container {
+        //width:529px;
+        width: 544px;
+        height: 177px;
+        display: inline-block;
+        margin-top: 60px;
+        .figure-logo {
+          width: 240px;
+          height: 177px;
+          display: inline-block;
+          margin-right: 28px;
+          vertical-align: middle;
+          img {
+            width: 100%;
+            hieght: 100%;
+          }
+        }
+        .figure-desc {
+          display: inline-block;
+          vertical-align: middle;
+          .figure-name-title {
+            .figure-name {
+              @include fontstyle(22px, 'SourceHanSansCN-Normal', #333);
+            }
+            .figure-title {
+              @include fontstyle(16px, 'SourceHanSansCN-Normal', #EE7306);
+            }
+          }
+          .figure-desc-info {
+            @include fontstyle(14px, 'SourceHanSansCN-Normal', #999999);
+            margin-top: 26px;
+          }
+        }
+        &:nth-child(odd) {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+
+  //解决方案
+  .platform-container {
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    height: 320px;
+    margin: 185px auto 237px;
+    .arrow-left {
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+      cursor: pointer;
+      z-index: 99;
+      @include bg-image("/website/images/about/arrow-left", 23px, 39px);
+    }
+    .arrow-right {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -20px;
+      cursor: pointer;
+      z-index: 99;
+      @include bg-image("/website/images/about/arrow-right", 23px, 39px);
+    }
+    #slide-wrap {
+      width: 2200px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      .aggre-pay-sass {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        @include bg-image("/website/images/about/aggre-payment", 1000px, 320px);
+      }
+      .platform-sass {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        @include bg-image("/website/images/about/sass-logo", 1000px, 320px);
+      }
+      .mid-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -85px;
+        margin-top: -25px;
+      }
+    }
+  }
+}

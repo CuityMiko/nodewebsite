@@ -1,0 +1,79 @@
+.footer {
+  height: 410px;
+  background-color: #333C4A;
+  .footer-container {
+    position: relative;
+    padding-top: 65px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .footer-product {
+      float: left;
+    }
+    .footer-partner {
+      float: left;
+      margin-left: 140px;
+    }
+    .footer-helper {
+      float: left;
+      margin-left: 138px;
+    }
+    .footer-about {
+      float: left;
+      margin-left: 139px;
+    }
+    .footer-contact {
+      float: left;
+      height: 187px;
+      margin-left: 108px;
+      padding-left: 51px;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      .wechat {
+        margin-top: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        @include bg-image("/website/images/footer/wechat", 110px, 109px);
+      }
+      .other-contact {
+        margin-left: 41px;
+        display: inline-block;
+        vertical-align: middle;
+        .tel {
+          .tel-icon, .tel-text {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .tel-icon {
+            margin-right: 23px;
+            @include bg-image("/website/images/footer/tel_icon", 24px, 22px);
+          }
+          .tel-text {
+            @include fontstyle(14px, inherit, rgba(255,255,255,0.8));
+          }
+        }
+        .number {
+          margin-top: 22px;
+          @include fontstyle(26px, inherit, rgba(255,255,255,0.8));
+        }
+      }
+    }
+    .item-tit {
+      margin-bottom: 32px;
+      @include fontstyle(14px, inherit, rgba(255,255,255,0.8));
+    }
+    p {
+      margin-bottom: 20px;
+      a {
+        text-decoration: none;
+        @include fontstyle(12px, inherit, rgba(255,255,255,0.8));
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .statement {
+    padding-top: 37px;
+    text-align: center;
+    @include fontstyle(12px, inherit, rgba(255,255,255,0.8));
+  }
+}

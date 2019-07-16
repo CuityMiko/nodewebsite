@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+//智能分销css
+@import "../common/head";
+@import "../common/footer";
+
+// banner
+.agent-banner {
+  @include bg-image("/website/images/apply/agent/agent_banner", 100%, 540px);
+}
+
+// 表单
+.agent-form {
+  margin: -420px auto 151px;
+  width: 1000px;
+  height: 740px;
+  background-color: #ffffff;
+  box-shadow: -1px 9px 29px 0px rgba(28, 28, 28, 0.06);
+  .wrap {
+    width: 608px;
+    margin: 0 auto;
+    .title {
+      @include fontstyle(28px, inherit, #333333);
+      padding: 70px 0 50px;
+      text-align: center;
+    }
+    .layui-elem-field {
+      border: none;
+      .layui-form {
+        .btn-float {
+          float: right;
+          margin-right: 12px;
+          margin-top: 5px;
+        }
+        .hr {
+          width: 600px;
+          border-bottom: 1px dashed #EEEDED;
+          padding-top: 20px;
+          margin-bottom: 35px;
+        }
+        .layui-form-item {
+          display: inline-block;
+          .label {
+            @include fontstyle(14px, inherit, #333333);
+            line-height: 38px;
+            text-align: center;
+          }
+          .apply-label {
+            margin-left: -5px;
+          }
+          .apply-div {
+            margin-left: 0px;
+          }
+          .required {
+            &::before {
+              content: '';
+              width: 5px;
+              height: 5px;
+              display: inline-block;
+              background: rgba(255, 77, 77, 1);
+              border-radius: 50%;
+              margin: 0 7px 2px 0;
+            }
+          }
+          .layui-input {
+            border-radius: 4px;
+          }
+          .layui-input-block {
+            width: 500px;
+            display: inline-block;
+            margin-left: 0px;
+            .layui-textarea {
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

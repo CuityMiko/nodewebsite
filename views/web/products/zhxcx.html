@@ -1,0 +1,106 @@
+<!--引入当前css-->
+<link href="/website/css/products/zhxcx.css" rel="stylesheet">
+
+<div>
+    <!--头部banner-->
+    <div class="banner-content">
+        <div class="item">
+            <div class="banner">
+                <div class="content-core">
+                    <div class="text">
+                        <div class="banner-title">智慧小程序</div>
+                        <div class="banner-subtitle">支付宝、微信双系统一键接入 轻松上手</div>
+                        <div class="banner-btn mid-btn">了解更多</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--功能图片展示-->
+    <section class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <!--图标-->
+        <div class="function-icons">
+        </div>
+        <!--优点-->
+        <div class="advantage">
+            <div class="text-img-content">
+                <img src="/website/images/products/zhxcx/duoqudao.png"/>
+                <div class="image-text">
+                    <div class="image-name">多渠道入口曝光</div>
+                    <div class="image-desc">支付宝+微信大数据入口为景区增加更多流量入口，增加多抵达入口，快盈结合支付宝社交经济和微信共享经济达到裂变效果
+                    </div>
+                </div>
+            </div>
+            <div class="text-img-content">
+                <div class="image-text">
+                    <div class="image-name">景区智慧营销</div>
+                    <div class="image-desc">景区票务系统打通微信支付宝，微信端内消息服务触达，进而引导进入景区官方微信小程序领取优惠券，游客入园核销，进而拉动园内二次消费
+                    </div>
+                </div>
+                <img src="/website/images/products/zhxcx/zhihuiyingxiao.png"/>
+            </div>
+        </div>
+        <!--一体化解决方案-->
+        <div class="solution-img"></div>
+    </section>
+
+    <!--动态图文区域-->
+    <section class="text-img-wrap media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <% for(var i = 0; i < model.zhxcxData.length; i++) { %>
+
+        <% if (i % 2 == 0) { %>
+        <div class="text-img-content">
+            <img src="<%=model.zhxcxData[i].img%>"/>
+            <div class="image-text">
+                <div class="image-name"><%=model.zhxcxData[i].imageName%></div>
+                <div class="image-desc">
+                    <%=model.zhxcxData[i].imageDesc%>
+                </div>
+            </div>
+        </div>
+        <% } else { %>
+        <div class="text-img-content">
+            <div class="image-text">
+                <div class="image-name"><%=model.zhxcxData[i].imageName%></div>
+                <div class="image-desc">
+                    <%=model.zhxcxData[i].imageDesc%>
+                </div>
+            </div>
+            <img src="<%=model.zhxcxData[i].img%>"/>
+        </div>
+        <% } } %>
+    </section>
+
+    <!--管理景区-->
+    <section class="resorts-manage media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <div class="section-tit">轻松管理景区</div>
+        <div class="section-subtit">助力景区管理商户 工作人员和游客</div>
+        <div class="manage-img"></div>
+    </section>
+
+    <!--大数据互联-->
+    <section class="ai-data media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <div class="section-tit">智能AI大数据互联</div>
+        <div class="section-subtit">方便管理人员实时监控数据 采集自己的大数据资产</div>
+        <div class="aidata-img"></div>
+    </section>
+
+    <!--技术支持-->
+    <section class="support media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <div class="section-tit">技术支持组建</div>
+        <div class="section-subtit">景区/酒店/乐园/停车场等提供多种解决方案</div>
+        <div class="support-img"></div>
+    </section>
+
+    <!--服务客户-->
+    <%include ../common/customers.html%>
+
+    <!--底部banner-->
+    <div class="footer-banner media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <div class="banner-title">智慧小程序</div>
+        <div class="banner-subtitle">支付宝、微信双系统一键接入 轻松上手</div>
+        <div class="banner-btn mid-btn">了解更多</div>
+    </div>
+
+</div>

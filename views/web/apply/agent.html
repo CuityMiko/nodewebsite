@@ -1,0 +1,98 @@
+<!--引入当前css-->
+<link href="/website/css/apply/agent.css" rel="stylesheet">
+
+<div>
+    <!--banner-->
+    <div class="agent-banner"></div>
+
+    <!--表单-->
+    <div class="agent-form">
+        <div class="wrap">
+            <div class="title">申请成为代理商</div>
+            <fieldset class="layui-elem-field">
+                <form class="layui-form">
+                    <div class="layui-form-item layui-col-md12 layui-col-space10">
+                        <label class="label required layui-col-md2">申请人姓名</label>
+                        <div class="layui-col-md10">
+                            <input type="text" id="applyName" name="applyName" required lay-verify="required"
+                                   placeholder="请输入申请人姓名"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-col-md12 layui-col-space10">
+                        <label class="label required layui-col-md2">申请人手机</label>
+                        <div class="layui-col-md10">
+                            <input type="text" id="applyPhone" name="applyPhone" required lay-verify="required"
+                                   placeholder="请输入申请人手机号"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-col-md12">
+                        <label class="label required layui-col-md2 apply-label">申请人区域</label>
+                        <div class="layui-col-md10 layui-col-space10 apply-div">
+                            <div class="layui-col-md4">
+                                <select name="selprovince" lay-verify="required" id="selprovince" lay-filter="selectProvince">
+                                </select>
+                            </div>
+                            <div class="layui-col-md4">
+                                <select name="selcity" lay-verify="required" id="selcity" lay-filter="selectCity">
+                                    <option value="0">市</option>
+                                </select>
+                            </div>
+                            <div class="layui-col-md4">
+                                <select name="selarea" lay-verify="required" id="selarea">
+                                    <option value="0">区/县</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item hr"></div>
+                    <div class="layui-form-item layui-col-md12 layui-col-space10">
+                        <label class="label layui-col-md2">公司名称</label>
+                        <div class="layui-col-md10">
+                            <input type="text" id="companyName" name="companyName"
+                                   placeholder="请输入公司名称"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-col-md12 layui-col-space10">
+                        <label class="label layui-col-md2">公司地址</label>
+                        <div class="layui-col-md10">
+                            <input type="text" id="companyAddress" name="companyAddress"
+                                   placeholder="请输入公司地址"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text layui-col-md12 layui-col-space5">
+                        <label class="label layui-col-md2">公司概况</label>
+                        <div class="layui-input-block layui-col-md10">
+                            <textarea id="companySituation" name="companySituation" placeholder="请描述您从事的行业，目前团队人数等"
+                                      class="layui-textarea"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="layui-form-item btn-float">
+                        <div class="mid-btn" id="btngetData" >申请代理</div>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+<script id="province" type="text/html">
+    {{#  layui.each(d, function(index, item) { }}
+    <option value="{{ item }}">{{ item[0] }}</option>
+    {{#  }); }}
+</script>
+<script id="city" type="text/html">
+    {{#  layui.each(d, function(index, item) { }}
+    <option value="{{ item }}">{{ item[0] }}</option>
+    {{#  }); }}
+</script>
+<script id="area" type="text/html">
+    {{#  layui.each(d, function(index, item) { }}
+    <option value="{{ item }}">{{ item[0] }}</option>
+    {{#  }); }}
+</script>
+<script src="/website/js/apply/agent.controller.js"></script>

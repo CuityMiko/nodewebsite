@@ -1,0 +1,72 @@
+<!--引入当前scss-->
+<link href="/website/css/about/index.css" rel="stylesheet">
+
+<div class="about">
+    <!--头部图片-->
+    <div class="banner-content">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="banner">
+                    <div class="content-core">
+                        <div class="text">
+                            <div class="banner-title">关于我们</div>
+                            <div class="banner-subtitle">打造智慧化大数据平台</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--公司简介-->
+    <div class="comp-intro"></div>
+
+    <div class="comp-wish-container">
+        <div class="comp-wish-title">公司愿景</div>
+        <div class="comp-wish-content"></div>
+    </div>
+
+    <!--团队介绍-->
+    <div class="comp-figure-container">
+        <div class="comp-figure-title">团队介绍</div>
+        <div class="comp-figure-content">
+            <% for(var i=0;i
+            <model.compFigure.length
+            ;i++){%>
+            <div class="figure-dingle-container">
+                <div class="figure-logo">
+                    <img src="<%=model.compFigure[i].icon %>"/>
+                </div>
+                <div class="figure-desc">
+                    <div class="figure-name-title">
+                        <span class="figure-name"><%=model.compFigure[i].figureName %></span>
+                        <span class="figure-title"><%=model.compFigure[i].figureTitle %></span>
+                    </div>
+                    <div class="figure-desc-info">
+                        <div><%=model.compFigure[i].figureIntro1 %></div>
+                        <div><%=model.compFigure[i].figureIntro2 %></div>
+                        <div><%=model.compFigure[i].figureIntro3 %></div>
+                        <div><%=model.compFigure[i].figureIntro4 %></div>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+
+        </div>
+    </div>
+
+    <!--解决方案-->
+    <div class="platform-container">
+        <div class="arrow-left"></div>
+        <div class="arrow-right"></div>
+        <!--滑动板块-->
+        <div id="slide-wrap">
+            <div class="aggre-pay-sass">
+                <div class="banner-btn mid-btn">了解更多</div>
+            </div>
+            <div class="platform-sass">
+                <div class="banner-btn mid-btn">了解更多</div>
+            </div>
+        </div>
+    </div>
+</div>
+

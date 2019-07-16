@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+//智能分销css
+@import "../common/head";
+@import "../common/footer";
+@import "../common/customers";
+
+//引入banner图
+.banner-content {
+  .banner {
+    @include bg-image("/website/images/products/znfx/banner", 100%, 540px);
+  }
+}
+
+// 分销铁军title
+.distribution {
+  width: 100%;
+  height: 275px;
+  text-align: center;
+  vertical-align: middle;
+  .distribution-title {
+    padding-top: 120px;
+    @include fontstyle(30px, inherit, #333333);
+  }
+  .distribution-subtitle {
+    margin-top: 10px;
+    @include fontstyle(18px, inherit, #999999);
+  }
+}
+
+// 分销铁军banner
+.distribution-banner {
+  margin: 0 auto;
+  @include bg-image("/website/images/products/znfx/distribution", 691px, 417px);
+}
+
+// 三个分销
+.text-img-wrap {
+  margin-top: 177px;
+}
+
+// 六大功能
+.functions {
+  .text {
+    @include fontstyle(30px, inherit, #333333);
+    margin: 180px 0 80px;
+    text-align: center;
+  }
+  .function-1 {
+    margin: 0 auto;
+    @include bg-image("/website/images/products/znfx/function_1", 1180px, 1146px);
+  }
+  .function-2 {
+    margin: 110px auto 0;
+    @include bg-image("/website/images/products/znfx/function_2", 1180px, 1146px);
+  }
+}
+
+// 代言人角色
+.spokesman {
+  .text {
+    @include fontstyle(30px, inherit, #333333);
+    text-align: center;
+    margin: 149px 0 60px;
+  }
+  .spokesman-icon {
+    margin: 0 auto;
+    @include bg-image("/website/images/products/znfx/spokesman", 1180px, 463px);
+  }
+}
+
+// 核心优势
+.advantage {
+  background-color: #F9FAFC;
+  margin-top: 116px;
+  .text {
+    @include fontstyle(30px, inherit, #333333);
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 39px;
+  }
+  .btn-shadow {
+    box-shadow: 0px 5px 16px 0px rgba(239, 152, 58, 0.58);
+    margin: 0 auto 97px;
+  }
+  .advantage-icon {
+    margin: 0 auto;
+    @include bg-image("/website/images/products/znfx/advantage", 1180px, 1146px);
+    padding-bottom: 116px;
+  }
+}
+
+// 技术支持组建
+.technical {
+  .text {
+    text-align: center;
+    .title {
+      @include fontstyle(30px, inherit, #333333);
+      margin: 110px 0 15px;
+    }
+    .subtitle {
+      @include fontstyle(18px, inherit, #999999);
+      margin-bottom: 70px;
+    }
+    .technical-icon {
+      margin: 0 auto;
+      @include bg-image("/website/images/products/znfx/technical_support", 1180px, 467px);
+    }
+  }
+}
+
+// 服务客户
+.service {
+  text-align: center;
+  @include fontstyle(30px, inherit, #333333);
+  margin: 126px 0 79px;
+}
+.img-div-wrap {
+  width: 1068px;
+  height: 144px;
+  margin: 0 auto 169px;
+}
+
+//尾部引入banner图
+.footer-banner {
+  @include bg-image("/website/images/products/znfx/footer_banner", 100%, 314px);
+}
+
+//覆盖base中的mid-btn的样式
+.mid-btn {
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px;
+  background-color: #F2A62B;
+  @include fontstyle(16px, inherit, white);
+  &:hover{
+    background-color: #F7C169;
+  }
+}

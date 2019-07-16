@@ -1,0 +1,85 @@
+{
+  "zhxcxData": [
+    {
+      "img": "/zhxcx/zhihuidaolan.png",
+      "imageName": "智慧导览",
+      "imageDesc": "在地图上标记导览内容，为游客规划最近路线，游客需求即时满足，游玩体验及趣味提升，赋能景区优化商业模式"
+    },
+    {
+      "img": "/zhxcx/zhinengkefu.png",
+      "imageName": "智能客服",
+      "imageDesc": "游前咨询+游中问答+应急协助+游后服务，快速帮游客排解疑惑，拥有强大的数据检索，可代替客服人员或工作人员到景区介绍"
+    },
+    {
+      "img": "/zhxcx/pingjiajianyi.png",
+      "imageName": "评价建议",
+      "imageDesc": "及时收集游客评价建议，提升景区服务质量。差评提醒功能满足第一时间处理游客负面情绪，避免差评外流，舆情恶化造成形象影响"
+    }
+  ],
+  "znfxData": [
+    {
+      "img": "/znfx/ykfx.png",
+      "imageName": "游客帮你分销",
+      "imageDesc": "分享+传播+分销独有模式，从游客到粉丝再至分销员不断裂变，通过佣金激励将景区分享到微信群、朋友圈的口碑分享模式，实现社群传播，产生订单"
+    },
+    {
+      "img": "/znfx/ygfx.png",
+      "imageName": "员工帮你分销",
+      "imageDesc": "量身定制的解决方案，发动员工、销售自己的产品，让最懂旅游、最懂景区的员工成为顾问式的分销员"
+    },
+    {
+      "img": "/znfx/kyfx.png",
+      "imageName": "快盈帮你分销",
+      "imageDesc": "海量优质分销商，拓展更宽广的分销渠道，共享平台资源"
+    }
+  ],
+  "fwkhData": [
+    {
+      "img": "/common/sclogo.png"
+    },
+    {
+      "img": "/common/hclogo.png"
+    },
+    {
+      "img": "/common/hlglogo.png"
+    },
+    {
+      "img": "/common/hhllogo.png"
+    },
+    {
+      "img": "/common/tslogo.png"
+    },
+    {
+      "img": "/common/xhlogo.png"
+    },
+    {
+      "img": "/common/bwglogo.png"
+    },
+    {
+      "img": "/common/mmwglogo.png"
+    },
+    {
+      "img": "/common/xwhlogo.png"
+    },
+    {
+      "img": "/common/lyslogo.png"
+    }
+  ],
+  "jdalData": [
+    {
+      "img": "/classicCase/case-carousel1.png"
+    },
+    {
+      "img": "/classicCase/case-carousel2.png"
+    },
+    {
+      "img": "/classicCase/case-carousel3.png"
+    },
+    {
+      "img": "/classicCase/case-carousel4.png"
+    },
+    {
+      "img": "/classicCase/case-carousel5.png"
+    }
+  ]
+}

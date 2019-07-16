@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+//智慧小程序css
+@import "../common/head";
+@import "../common/footer";
+@import "../common/customers";
+
+//头部引入banner图
+.banner-content {
+  .banner {
+    @include bg-image("/website/images/products/zhxcx/banner", 100%, 540px);
+  }
+}
+
+//功能图片展示
+//图标
+.function-icons {
+  margin: 158px auto 0;
+  @include bg-image("/website/images/products/zhxcx/function_icons", 1180px, 123px);
+}
+
+//优点
+.advantage {
+  margin-top: 200px;
+}
+
+//解决方案
+.solution-img {
+  margin: 194px auto 0;
+  @include bg-image("/website/images/products/zhxcx/solution_img", 1182px, 960px);
+}
+
+//动态图文区域
+.text-img-wrap {
+  margin-top: 147px;
+}
+
+//管理景区
+.resorts-manage {
+  .manage-img {
+    margin: 37px auto 0;
+    @include bg-image("/website/images/products/zhxcx/manage_img", 1180px, 600px);
+
+  }
+}
+
+//大数据互联
+.ai-data {
+  margin-top: 49px;
+  .aidata-img {
+    margin: 90px auto 0;
+    @include bg-image("/website/images/products/zhxcx/aidata_img", 1180px, 833px);
+  }
+}
+
+//技术支持
+.support {
+  margin-top: 180px;
+  .support-img {
+    margin: 70px auto 0;
+    @include bg-image("/website/images/products/zhxcx/support_img", 1226px, 467px);
+  }
+}
+
+//尾部引入banner图
+.footer-banner {
+  @include bg-image("/website/images/products/zhxcx/footer_banner", 100%, 314px);
+}
+
+//配置banner按钮颜色 覆盖mid-btn样式
+.mid-btn{
+  background-color: #6981F6;
+  &:hover{
+    background-color: #91A3F9;
+  }
+}
